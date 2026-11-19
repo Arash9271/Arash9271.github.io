@@ -1,1 +1,13 @@
-console.log("Website loaded successfully.");
+const navToggle = document.querySelector(".nav-toggle");
+const siteNav = document.querySelector(".site-nav");
+
+if (navToggle && siteNav) {
+    navToggle.addEventListener("click", () => {
+        const isOpen = siteNav.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+}
+
+document.querySelectorAll(".year").forEach((el) => {
+    el.textContent = new Date().getFullYear();
+});

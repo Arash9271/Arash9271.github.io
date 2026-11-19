@@ -2,92 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>Arash Goligerdian  | Personal Website</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arash Goligerdian, Math Fellow at the University of California Riverside. Scientific machine learning, numerical analysis, and PDEs.">
+    <title>Arash Goligerdian | Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+    <header class="site-header">
         <div class="container">
-            <h1>Arash Goligerdian</h1>
-
-            <nav>
-                <a href="#about">About</a>
-                <a href="#research">Research</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+            <a class="brand" href="index.html">
+                <span class="brand-name">Arash Goligerdian</span>
+                <span class="brand-title">Math Fellow, UC Riverside</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+            <nav class="site-nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="research.html">Research</a>
+                <a href="publications.html">Publications</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="cv.html">CV</a>
             </nav>
         </div>
     </header>
 
     <main class="container">
-        <section class="hero">
-            <h2>Welcome to my website</h2>
+        <section class="profile">
+            <div class="avatar">
+                <span>AG</span>
+                <img src="assets/profile.jpg" alt="Photo of Arash Goligerdian" onerror="this.remove()">
+            </div>
 
-            <p>
-                I work on partial differential equations,
-                numerical analysis, and scientific computing.
-            </p>
-
-            <a class="button" href="#research">
-                View my research
-            </a>
-        </section>
-
-        <section id="about">
-            <h2>About Me</h2>
-
-            <p>
-                I am interested in mathematical modeling,
-                finite element methods, Cahn–Hilliard equations,
-                and scientific computing with FEniCSx.
-            </p>
-        </section>
-
-        <section id="research">
-            <h2>Research</h2>
-
-            <p>
-                My research includes cross-diffusion systems,
-                phase-field models, reaction-diffusion equations,
-                and numerical methods for partial differential equations.
-            </p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-
-            <article class="card">
-                <h3>Cahn–Hilliard Simulation</h3>
+            <div>
+                <h1>Arash Goligerdian</h1>
+                <p class="role">
+                    Math Fellow, Department of Mathematics<br>
+                    University of California Riverside &middot; Skye Hall, 271A
+                </p>
 
                 <p>
-                    A finite-element implementation of a Cahn–Hilliard
-                    model using Python and FEniCSx.
+                    My research lies at the intersection of scientific computing and artificial
+                    intelligence. I develop algorithms that combine data-driven methods with first
+                    principles, such as the conservation of mass, energy, and momentum, so that AI
+                    models can address complex challenges in science and engineering. A central theme
+                    of my work is physics-informed neural networks (PINNs), which build physical laws,
+                    expressed as ordinary and partial differential equations, directly into the model.
+                    The result is solutions that are both accurate and consistent with the laws of
+                    nature, with applications in computational modeling, biomedical sciences, and
+                    engineering.
                 </p>
-            </article>
+
+                <p>
+                    I am currently a Math Fellow at UC Riverside working with
+                    Prof. Maziar Raissi. I received my PhD in Applied Mathematics from the
+                    University of Houston (2025), and was a Postdoctoral Research Associate at
+                    Texas A&amp;M University before joining UC Riverside.
+                </p>
+
+                <ul class="tags">
+                    <li>Scientific machine learning</li>
+                    <li>AI agents for scientific simulation</li>
+                    <li>Deep learning</li>
+                    <li>Numerical analysis</li>
+                    <li>Finite element methods</li>
+                    <li>Integral equations</li>
+                    <li>Reaction&ndash;diffusion&ndash;advection systems</li>
+                    <li>Computational fluid dynamics</li>
+                    <li>Numerical optimization</li>
+                </ul>
+
+                <div class="button-row">
+                    <a class="button" href="assets/CV.pdf" download>Download CV</a>
+                    <a class="button secondary" href="https://scholar.google.com/citations?user=TBSyoFEAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+                    <a class="button secondary" href="https://linkedin.com/in/arash-goligerdian92" target="_blank" rel="noopener">LinkedIn</a>
+                    <a class="button secondary" href="https://github.com/Arash9271" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-
+        <section>
+            <h2 class="section-title">Contact</h2>
             <p>
-                GitHub:
-                <a href="https://github.com/Arash9271">
-                    github.com/Arash9271
-                </a>
+                Email: <a href="mailto:arashg@ucr.edu">arashg@ucr.edu</a>
+                &middot; <a href="mailto:agoligerdian@uh.edu">agoligerdian@uh.edu</a><br>
+                Office: Skye Hall 271A, Department of Mathematics, University of California Riverside<br>
+                LinkedIn: <a href="https://linkedin.com/in/arash-goligerdian92" target="_blank" rel="noopener">linkedin.com/in/arash-goligerdian92</a>
             </p>
         </section>
     </main>
 
-    <footer>
-        <p>© 2026 Arash</p>
+    <footer class="site-footer">
+        <div class="container">
+            <div>
+                <p>&copy; <span class="year">2026</span> Arash Goligerdian</p>
+                <p>
+                    <a href="mailto:arashg@ucr.edu">arashg@ucr.edu</a> &middot;
+                    <a href="mailto:agoligerdian@uh.edu">agoligerdian@uh.edu</a>
+                </p>
+            </div>
+            <p class="profile-links">
+                <a href="https://scholar.google.com/citations?user=TBSyoFEAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+                <a href="https://orcid.org/0000-0002-1804-3661" target="_blank" rel="noopener">ORCID</a>
+                <a href="https://linkedin.com/in/arash-goligerdian92" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/Arash9271" target="_blank" rel="noopener">GitHub</a>
+            </p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
